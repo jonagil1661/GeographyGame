@@ -33,6 +33,17 @@ input{
   position:relative; left:45%; top:50%;
 }
 
+button{
+    width: 70px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    height: 56px; 
+    margin: 0;
+    position:relative; left:45%; top:49%;
+
+}
+
 .afghanistan{
   width: 100px;
   height: 100px;
