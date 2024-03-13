@@ -30,18 +30,28 @@ input{
   height: 50px;
   
   margin: 0;
-  position:relative; left:45%; top:50%;
+  position:absolute; left:45%; top:55%;
 }
 
-button{
-    width: 70px;
+.button1{
+    width: 200px;
     font-size: 20px;
     color: black;
     text-align: center;
-    height: 56px; 
+    height: 30px; 
     margin: 0;
-    position:relative; left:45%; top:49%;
+    position:absolute; left:45%; top:65%;
 
+}
+
+.button2{
+  width: 200px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    height: 30px; 
+    margin: 0;
+    position:absolute; left:45%; top:71%;
 }
 
 .afghanistan{
