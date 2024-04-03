@@ -30,7 +30,8 @@ input{
   height: 50px;
   
   margin: 0;
-  position:absolute; left:45%; top:55%;
+  margin-left: auto; margin-right: auto;
+  position:relative; top:55%;
 }
 
 .button1{
@@ -40,7 +41,8 @@ input{
     text-align: center;
     height: 30px; 
     margin: 0;
-    position:absolute; left:45%; top:65%;
+    margin-left: auto; margin-right: auto;
+    position:relative; top:65%;
 
 }
 
@@ -51,9 +53,19 @@ input{
     text-align: center;
     height: 30px; 
     margin: 0;
-    position:absolute; left:45%; top:71%;
+    margin-left: auto; margin-right: auto;
+    position:relative; top:71%;
 }
 img{
   width:200px;
   height:200px;
+  margin-left: auto; margin-right: auto;
+}
+
+.defaultImage{
+  margin-left: auto; margin-right: auto;
+}
+
+.userInput{
+  margin-left: auto; margin-right: auto;
 }
