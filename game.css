@@ -53,10 +53,7 @@ input{
     margin: 0;
     position:absolute; left:45%; top:71%;
 }
-
-.afghanistan{
-  width: 100px;
-  height: 100px;
-  text-align: center;
-  position:absolute; left:45%; top:40%;
+img{
+  width:200px;
+  height:200px;
 }
