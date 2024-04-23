@@ -24,6 +24,9 @@ fetch(apiUrl)
         console.error('Error fetching data:', error);
     });
         
+randomMap = -1;
+var count = 0;
+
 document.addEventListener("DOMContentLoaded", function() {
     const defaultImage = document.getElementById("defaultImage");
     const changeImageButton = document.getElementById("nextButton");
@@ -32,4 +35,18 @@ document.addEventListener("DOMContentLoaded", function() {
         const randomMap = mapsAndNames[Math.floor(Math.random() * mapsAndNames.length)].flag;
         defaultImage.src = randomMap;
     });
+});
+
+const input = document.getElementbyId("userInput");
+const guessButton = document.getElementById("guessButton");
+guessButton.addEventListener("click", function() {
+    if (mapsAndNames[randomMap].officialName.toString().equalsIgnoreCase(input.value) || 
+    mapsAndNames[randomMap].commonName.toString().equalsIgnoreCase(input.value))
+    {
+        count++;
+        document.getElementById("score").innerHTML = (String)(count);
+    }
+    else {
+        document.getElementById("score").innerHTML = "wrong";
+    }
 });
