@@ -26,6 +26,7 @@ fetch(apiUrl)
    });
    var x = 0;
    var y = 0;
+   var z = 0;
       
 document.addEventListener("DOMContentLoaded", function() {
         const scoreChange = document.getElementById("num");
@@ -45,13 +46,22 @@ document.addEventListener("DOMContentLoaded", function() {
         
 
         const userInput = document.getElementById('input').value;
-       if (userInput == randomCountry.commonName) {
+        const tryAgain = document.getElementById("tryAgainLabel");
+        z++;
+       if (userInput.toLowerCase() == randomCountry.commonName.toLowerCase() || 
+       userInput.toLowerCase() == randomCountry.officialName.toLowerCase()) {
         document.getElementById('input').value = "";
         document.getElementById("num").textContent = ++x;    
         randomCountry = mapsAndNames[Math.floor(Math.random() * mapsAndNames.length)];
         const randomMap = randomCountry.flag;
         defaultImage.src = randomMap;
+        tryAgain.style.visibility = 'hidden';
         }   
+        else {
+            if (z>1) {
+                tryAgain.style.visibility = 'visible';
+            }
+        }
         document.getElementById("answerbox").textContent = randomCountry.commonName;
    });
 });

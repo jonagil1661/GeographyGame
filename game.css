@@ -72,3 +72,12 @@ body {
     position: relative; margin-top: 40%;
     background: #ff7c7c;
 }
+
+.tryAgain{
+  text-align: center;
+  width: 75px; height: 20px;
+  display: block;
+  position: relative; bottom: 10%; left: 10%;
+  background: #ff7c7c;
+  visibility: hidden;
+}
