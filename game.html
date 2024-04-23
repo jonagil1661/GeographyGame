@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="utf-8">
@@ -18,14 +17,21 @@
         <div class="header">
             <h1>Guess That Country</h1>
         </div>
+        <!-- <div class="box" style="width:50%"></div> -->
+        <img id="image" class="image" src="usa.png"/>
+        <input class="userInput" type="text" value="" />
+        <button id="guessButton" class="guessButton" onclick="myFunction()">Guess!</button>
+        <script src="script.js"></script>
+
+        <script>
+            let n = 0;
+        </script>
+        <label class="score" id = "num" value="n">Score</label>
         
-        <img class="afghanistan"  src="flags/afghanistan.png"/>
-
-        <input id="userInput" type="text" value="Type here" />
-
-        <button type="button" onclick="alert('Try again!')">Enter</button>
-   
-        <div class="flag-box" style="width:50%"></div>
-   
+        <label class = "answer" id = "answerbox">country</label>
+        
     </body>
+   
+      
+
 </html>
