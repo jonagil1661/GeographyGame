@@ -42,13 +42,16 @@ document.addEventListener("DOMContentLoaded", function() {
             y++;
         }
         document.getElementById("num").textContent = x;
-        document.getElementById("answerbox").textContent = randomCountry.commonName;
-       if (document.getElementById('userInput').value = (randomCountry.commonName || randomCountry.officialName)) {
+        
+
+        const userInput = document.getElementById('input').value;
+       if (userInput == randomCountry.commonName) {
+        document.getElementById('input').value = "";
         document.getElementById("num").textContent = ++x;    
-        x = x + 1; 
         randomCountry = mapsAndNames[Math.floor(Math.random() * mapsAndNames.length)];
         const randomMap = randomCountry.flag;
         defaultImage.src = randomMap;
-    }   
+        }   
+        document.getElementById("answerbox").textContent = randomCountry.commonName;
    });
 });
