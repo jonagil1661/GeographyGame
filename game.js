@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const defaultImage = document.getElementById("image");
         const changeImageButton = document.getElementById("guessButton");
         const answerKey = document.getElementById("answer");
+        const changeImageButtonAfterSkip = document.getElementById("skipButton");
         let randomCountry;
     
    changeImageButton.addEventListener("click", function() {
@@ -64,4 +65,21 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         document.getElementById("answerbox").textContent = randomCountry.commonName;
    });
+
+   changeImageButtonAfterSkip.addEventListener("click", function() {
+    const userInput = document.getElementById('input').value;
+    const tryAgain = document.getElementById("tryAgainLabel");
+    tryAgain.style.visibility = 'hidden';
+
+        randomCountry = mapsAndNames[Math.floor(Math.random() * mapsAndNames.length)];
+        const randomMap = randomCountry.flag;            
+        defaultImage.src = randomMap;
+        y++;
+
+    document.getElementById("num").textContent = x;
+    document.getElementById("num").textContent = --x;  
+    document.getElementById('input').value = "";
+    document.getElementById("answerbox").textContent = randomCountry.commonName;
+    }); 
+
 });
