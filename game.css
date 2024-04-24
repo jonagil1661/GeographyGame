@@ -66,7 +66,8 @@ body {
 
 .score{
     text-align: center;
-    width: 50px; height: 50px;
+    font-size: 50px;
+    width: 120px; height: auto;
     display: block;
     position: relative; bottom: 10%; left: 10%;
     background: #ffffff;
@@ -83,9 +84,10 @@ body {
 
 .tryAgain{
   text-align: center;
-  width: 75px; height: 20px;
+  width: 200px; height: auto;
+  font-size: 40px;
   display: block;
-  position: relative; bottom: 10%; left: 10%;
+  position: relative; bottom: 3%; left: 80%;
   background: #ff7c7c;
   visibility: hidden;
 }
